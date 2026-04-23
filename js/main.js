@@ -29,17 +29,8 @@ function initNavigation() {
             e.preventDefault();
             navMenu.classList.toggle('active');
             
-            // Update hamburger icon
-            const icon = this.querySelector('i');
-            if (icon) {
-                if (navMenu.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            }
+            // Toggle hamburger animation class
+            this.classList.toggle('active');
             
             // Prevent body scroll when menu is open
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
@@ -145,8 +136,8 @@ function initAnimations() {
         });
     }
     
-    // Hero nodes animation
-    animateHeroNodes();
+    // Hero nodes animation - wait for full load
+    window.addEventListener('load', animateHeroNodes);
 }
 
 function animateHeroNodes() {
@@ -205,7 +196,7 @@ function handleFormSubmit(e) {
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting...';
     
-    // Simulate API call
+    // Simulated submission (no backend connected)
     setTimeout(() => {
         showNotification('Thank you for joining the movement! We\'ll be in touch soon.', 'success');
         form.reset();
