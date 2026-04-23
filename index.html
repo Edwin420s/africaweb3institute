@@ -6,6 +6,44 @@
     <title>Africa Web3 Institute | Shaping Africa's Web3 Future</title>
     <meta name="description" content="Africa Web3 Institute is a pan-African public policy and educational think tank advancing blockchain innovation through research, regulation, education, and ecosystem building.">
     
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Africa Web3 Institute | Shaping Africa's Web3 Future">
+    <meta property="og:description" content="Pan-African public policy and educational think tank advancing blockchain innovation through research, regulation, education, and ecosystem building.">
+    <meta property="og:image" content="https://africaweb3institute.netlify.app/og-image.png">
+    <meta property="og:url" content="https://africaweb3institute.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Africa Web3 Institute">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Africa Web3 Institute | Shaping Africa's Web3 Future">
+    <meta name="twitter:description" content="Pan-African public policy and educational think tank advancing blockchain innovation.">
+    <meta name="twitter:image" content="https://africaweb3institute.netlify.app/og-image.png">
+    
+    <!-- Structured Data - Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Africa Web3 Institute",
+      "url": "https://africaweb3institute.netlify.app/",
+      "logo": "https://africaweb3institute.netlify.app/logo.png",
+      "description": "Pan-African public policy and educational think tank advancing blockchain innovation through research, regulation, education, and ecosystem building.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Africa"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@africaweb3institute.org",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://twitter.com/AfricaWeb3Inst"
+      ]
+    }
+    </script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,42 +90,67 @@
         <div class="container">
             <!-- Credibility Signal -->
             <div class="credibility-banner">
-                <p>Trusted by 25+ African institutions • Used by policymakers across 15 countries • 500+ research publications</p>
+                <p>Working with policymakers, researchers, and builders across Africa</p>
             </div>
             
             <div class="hero-content">
                 <div class="hero-text">
+                    <!-- Powerful Stat -->
+                    <div class="hero-stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Web3 leaders powered across Africa</span>
+                    </div>
+                    
                     <h1>Shaping Africa's Web3 Policy, Education & Digital Future</h1>
                     <p>Africa Web3 Institute is a pan-African public policy and educational think tank advancing blockchain innovation through research, regulation, education, and ecosystem building.</p>
                     <div class="hero-cta">
-                        <a href="#publications" class="btn btn-primary">
+                        <a href="#publications" class="btn btn-primary" aria-label="Explore our research publications">
                             <i>📊</i> Explore Our Research
                         </a>
-                        <a href="#community" class="btn btn-secondary">
+                        <a href="#community" class="btn btn-secondary" aria-label="Join our community">
                             <i>👥</i> Join the Community
                         </a>
-                        <a href="mailto:info@africaweb3institute.org" class="btn btn-outline">
+                        <a href="mailto:info@africaweb3institute.org" class="btn btn-outline" aria-label="Partner with us via email">
                             Partner With Us →
                         </a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="web3-nodes">
-                        <div class="node"></div>
-                        <div class="node gold"></div>
-                        <div class="node"></div>
-                        <div class="node green"></div>
-                        <div class="node gold"></div>
-                        <div class="node"></div>
-                        <div class="node green"></div>
-                        <div class="node"></div>
-                        <div class="node gold"></div>
-                        <div class="node"></div>
-                        <div class="node green"></div>
-                        <div class="node"></div>
-                        <div class="node gold"></div>
-                        <div class="node"></div>
-                        <div class="node green"></div>
+                    <!-- Africa Map Visual -->
+                    <div class="africa-map">
+                        <svg viewBox="0 0 400 400" class="map-svg">
+                            <defs>
+                                <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0D2C7D;stop-opacity:0.1" />
+                                    <stop offset="100%" style="stop-color:#C9961A;stop-opacity:0.2" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Simplified Africa continent shape -->
+                            <path d="M200 80 Q250 100 280 140 Q300 180 290 220 Q280 260 250 280 Q220 300 180 290 Q140 280 110 250 Q90 220 100 180 Q110 140 140 100 Q170 85 200 80Z" 
+                                  fill="url(#mapGradient)" 
+                                  stroke="#0D2C7D" 
+                                  stroke-width="2" 
+                                  opacity="0.8"/>
+                            
+                            <!-- Connection nodes -->
+                            <circle cx="180" cy="150" r="6" fill="#1F7A3A" class="map-node">
+                                <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="220" cy="180" r="6" fill="#C9961A" class="map-node">
+                                <animate attributeName="r" values="6;8;6" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="160" cy="200" r="6" fill="#0D2C7D" class="map-node">
+                                <animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="240" cy="160" r="6" fill="#1F7A3A" class="map-node">
+                                <animate attributeName="r" values="6;8;6" dur="2.2s" repeatCount="indefinite"/>
+                            </circle>
+                            
+                            <!-- Connection lines -->
+                            <line x1="180" y1="150" x2="220" y2="180" stroke="#C9961A" stroke-width="1" opacity="0.5"/>
+                            <line x1="220" y1="180" x2="160" y2="200" stroke="#C9961A" stroke-width="1" opacity="0.5"/>
+                            <line x1="160" y1="200" x2="240" y2="160" stroke="#C9961A" stroke-width="1" opacity="0.5"/>
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -116,7 +179,7 @@
                         </svg>
                     </div>
                     <h3>Policy</h3>
-                    <p>We advise governments and institutions on digital asset policy.</p>
+                    <p>We provide regulatory analysis, digital asset policy advisory, and stakeholder engagement services to governments and institutions across 15+ African countries.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">
@@ -126,7 +189,7 @@
                         </svg>
                     </div>
                     <h3>Education</h3>
-                    <p>We educate stakeholders across Africa's Web3 ecosystem.</p>
+                    <p>We run policy bootcamps, developer workshops, and executive training programs for regulators and Web3 founders across Africa.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">
@@ -135,7 +198,7 @@
                         </svg>
                     </div>
                     <h3>Research</h3>
-                    <p>We publish research that informs regulation and innovation.</p>
+                    <p>We publish quarterly research reports, policy briefs, and regulatory landscape analysis that informs innovation and governance across the continent.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">
@@ -144,7 +207,7 @@
                         </svg>
                     </div>
                     <h3>Incubation</h3>
-                    <p>We incubate ideas and startups building Africa-first solutions.</p>
+                    <p>We support early-stage Web3 startups with mentorship, policy guidance, and access to our network of 500+ policymakers and industry leaders across Africa.</p>
                 </div>
             </div>
         </div>
@@ -302,11 +365,13 @@
                     <form id="communityForm">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required aria-describedby="name-error">
+                            <span class="error-message" id="name-error"></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error">
+                            <span class="error-message" id="email-error"></span>
                         </div>
                         <div class="form-group">
                             <label for="role">Role</label>
@@ -322,7 +387,13 @@
                             <label for="message">Message / Interest</label>
                             <textarea id="message" name="message" rows="4"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Join the Community →</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" aria-label="Submit form to join community">
+                            <span class="btn-text">Join the Community →</span>
+                            <span class="btn-loading" style="display: none;">
+                                <span class="spinner"></span>
+                                Submitting...
+                            </span>
+                        </button>
                     </form>
                 </div>
             </div>

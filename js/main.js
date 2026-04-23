@@ -171,8 +171,18 @@ function handleFormSubmit(e) {
     e.preventDefault();
     
     const form = e.target;
-    const formData = new FormData(form);
     const submitBtn = form.querySelector('button[type="submit"]');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+    
+    // Clear previous errors
+    document.querySelectorAll('.error-message').forEach(err => {
+        err.classList.remove('show');
+        err.textContent = '';
+    });
+    document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(field => {
+        field.classList.remove('error');
+    });
     
     // Get form values
     const name = form.querySelector('#name')?.value || '';
@@ -180,32 +190,52 @@ function handleFormSubmit(e) {
     const role = form.querySelector('#role')?.value || '';
     const message = form.querySelector('textarea')?.value || '';
     
-    // Validation
-    if (!name || !email) {
-        showNotification('Please fill in all required fields', 'error');
-        return;
+    let hasErrors = false;
+    
+    // Validation with inline errors
+    if (!name || name.trim().length < 2) {
+        const nameError = document.getElementById('name-error');
+        const nameField = document.getElementById('name');
+        nameError.textContent = 'Please enter your full name (at least 2 characters)';
+        nameError.classList.add('show');
+        nameField.classList.add('error');
+        hasErrors = true;
     }
     
-    if (!isValidEmail(email)) {
-        showNotification('Please enter a valid email address', 'error');
+    if (!email || !isValidEmail(email)) {
+        const emailError = document.getElementById('email-error');
+        const emailField = document.getElementById('email');
+        emailError.textContent = 'Please enter a valid email address';
+        emailError.classList.add('show');
+        emailField.classList.add('error');
+        hasErrors = true;
+    }
+    
+    if (hasErrors) {
         return;
     }
     
     // Show loading state
-    const originalText = submitBtn.textContent;
+    btnText.style.display = 'none';
+    btnLoading.style.display = 'flex';
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Submitting...';
     
     // Simulated submission (no backend connected)
     setTimeout(() => {
-        showNotification('Thank you for joining the movement! We\'ll be in touch soon.', 'success');
+        // Success state
+        showNotification('🎉 Welcome to the community! Check your email for next steps.', 'success');
+        
+        // Reset form
         form.reset();
+        
+        // Reset button state
+        btnText.style.display = 'inline';
+        btnLoading.style.display = 'none';
         submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
         
         // Log for debugging
         console.log('Form submitted:', { name, email, role, message });
-    }, 1500);
+    }, 2000);
 }
 
 function isValidEmail(email) {
