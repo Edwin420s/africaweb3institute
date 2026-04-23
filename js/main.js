@@ -223,7 +223,7 @@ function handleFormSubmit(e) {
     // Simulated submission (no backend connected)
     setTimeout(() => {
         // Success state
-        showNotification('🎉 Welcome to the community! Check your email for next steps.', 'success');
+        showNotification('Welcome to the community! Check your email for next steps.', 'success');
         
         // Reset form
         form.reset();

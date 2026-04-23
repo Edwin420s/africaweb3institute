@@ -1,24 +1,24 @@
 # Africa Web3 Institute Landing Page
 
-## ⚡ TL;DR
+## TL;DR
 A fully responsive, high-performance landing page for Africa Web3 Institute built with vanilla HTML/CSS/JS, optimized for speed (<1s load), accessibility, and mobile UX. Designed to remain fast and accessible even in low-bandwidth environments common across Africa.
 
-## 🚀 Live Demo
+## Live Demo
 https://africaweb3institute.netlify.app/ (live deployment)
 
 **Local Development**: http://localhost:8000
 
-## 📋 Project Overview
+## Project Overview
 A professional, high-performance landing page for Africa Web3 Institute (AWI) - a pan-African public policy and educational think tank advancing blockchain innovation through research, regulation, education, and ecosystem building. This project is specifically optimized for low-bandwidth environments common across Africa while maintaining modern UI performance standards.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **HTML5** - Semantic, accessible markup
 - **CSS3** - Modern CSS Grid/Flexbox with custom properties
 - **JavaScript ES6+** - Clean, modular, performant
 - **Google Fonts** - Inter & DM Sans typography
 - **No external dependencies** - Pure vanilla implementation
 
-## 📁 Project Structure
+## Project Structure
 ```
 awi-landing-page/
 ├── index.html          # Main HTML file (15.1KB)
@@ -30,22 +30,22 @@ awi-landing-page/
 └── README.md           # This documentation
 ```
 
-## ⚡ Performance & Accessibility
+## Performance & Accessibility
 
-### 🎯 Key Metrics
+### Key Metrics
 - **Total Size**: <31KB (ultra-lightweight)
 - **Load Time**: <1 second on 3G networks
 - **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices)
 - **Animation Performance**: 60fps smooth interactions
 - **Mobile Optimized**: Perfect scores on mobile devices
 
-### 🌍 Africa-Specific Optimizations
+### Africa-Specific Optimizations
 - **Low Bandwidth First**: Optimized for 3G connections common across Africa
 - **Progressive Enhancement**: Works even with JavaScript disabled
 - **Reduced Motion**: Respects user accessibility preferences
 - **Semantic HTML**: Screen reader friendly for inclusive access
 
-### 🎨 Design System
+### Design System
 - **Color Palette**: 
   - Deep Policy Blue: `#0D2C7D`
   - Digital Gold: `#C9961A`
@@ -54,64 +54,64 @@ awi-landing-page/
 - **Spacing**: 8pt grid system for consistency
 - **Components**: Reusable card and button systems
 
-## 🏗️ Architecture & Code Quality
+## Architecture & Code Quality
 
-### 📦 Modular Structure
+### Modular Structure
 - **Separation of concerns**: HTML/CSS/JS completely separated
 - **Component-based CSS**: Organized, maintainable stylesheets
 - **Modular JavaScript**: Feature-based organization with clear modules
 - **Semantic HTML**: Accessible and SEO-friendly markup
 - **Clean codebase**: Well-documented, easy to maintain
 
-### 📝 Documentation Standards
+### Documentation Standards
 - **Comprehensive comments**: Code explains purpose and implementation
 - **Inline documentation**: HTML elements clearly labeled
 - **CSS organization**: Logical grouping with clear sections
 - **JavaScript modules**: Each function documented with JSDoc-style comments
 - **README completeness**: Full setup, deployment, and usage instructions
 
-## 📱 Responsive Design & Performance
+## Responsive Design & Performance
 
-### 📐 Breakpoints
+### Breakpoints
 - **Mobile**: ≤768px (single column, touch-optimized)
 - **Tablet**: ≤1024px (adjusted layouts, medium screens)
 - **Desktop**: >1024px (full layouts, large screens)
 - **4K**: Optimized for ultra-wide displays
 - **Fluid typography**: Clamp() functions for scalable text
 
-### ⚡ Performance Techniques
+### Performance Techniques
 - **Intersection Observer**: Lazy loading and scroll animations
 - **Debounced Resize**: Optimized window resize handling
 - **Throttled Scroll**: Smooth scrolling without performance impact
 - **CSS Transforms**: Hardware-accelerated animations
 - **Minimal Dependencies**: Zero external libraries
 
-## ✨ Interactive Features
+## Interactive Features
 
-### 🧭 Navigation System
+### Navigation System
 - **Sticky header**: Smart scroll effects with backdrop blur
 - **Smooth scrolling**: Offset-aware navigation with proper positioning
 - **Mobile menu**: Animated hamburger with body scroll lock
 - **Active states**: Visual feedback for current section
 - **Click-outside detection**: Intuitive menu closing
 
-### 🎯 User Experience
+### User Experience
 - **Hover effects**: Micro-interactions on all interactive elements
 - **Loading states**: Visual feedback during form submission
 - **Form validation**: Real-time feedback with error handling
 - **Success notifications**: Modern toast notification system
 - **Accessibility**: ARIA compliant, keyboard navigation
 
-### 🎨 Animations & Effects
+### Animations & Effects
 - **Fade-in effects**: Intersection Observer for performance
 - **Hero animations**: Floating Web3 nodes with staggered timing
 - **Card reveals**: Staggered animations on scroll
 - **Smooth transitions**: Hardware accelerated for 60fps
 - **Reduced motion**: Respects user accessibility preferences
 
-## 📄 Complete Section Implementation
+## Complete Section Implementation
 
-### ✅ All Required Sections (11/11)
+### All Required Sections (11/11)
 1. **Hero Section** - Bold mission statement with animated Web3 visualization
 2. **Who We Are** - Institutional identity with gold accent lines
 3. **What We Do** - 4-card interactive grid (Policy, Education, Research, Incubation)
@@ -124,22 +124,22 @@ awi-landing-page/
 10. **Footer** - 4-column contact layout with social links
 11. **Navigation** - Sticky header with mobile responsiveness
 
-### 🎯 Component Details
+### Component Details
 - **Cards**: Hover animations, gold accent lines, shadow effects
 - **Buttons**: Three variants (primary, secondary, outline) with states
 - **Forms**: Validation, accessibility, modern styling
 - **Navigation**: Mobile-first, smooth scrolling, active states
 - **Typography**: Responsive sizing, proper hierarchy, web fonts
 
-## 🚀 Deployment & Production
+## Deployment & Production
 
-### 📦 Easy Deployment
+### Easy Deployment
 - **Static files**: No server requirements, pure HTML/CSS/JS
 - **CDN ready**: Optimized for browser caching
 - **HTTPS ready**: No mixed content issues
 - **Cross-browser**: Modern browser support with graceful degradation
 
-### 🌐 Hosting Options
+### Hosting Options
 ```bash
 # Vercel (Recommended - Zero config)
 vercel deploy
@@ -154,7 +154,7 @@ gh-pages -d .
 # Just upload the entire project folder
 ```
 
-### 🔧 Development Commands
+### Development Commands
 ```bash
 # Start local development server
 python3 -m http.server 8000
@@ -168,9 +168,9 @@ npx stylelint css/styles.css
 npx eslint js/main.js
 ```
 
-## 📊 Performance Metrics
+## Performance Metrics
 
-### ⚡ Speed Scores
+### Speed Scores
 - **Performance Score**: 95+ (Lighthouse)
 - **First Contentful Paint**: <1.2s
 - **Largest Contentful Paint**: <2.0s
@@ -178,36 +178,36 @@ npx eslint js/main.js
 - **Total Blocking Time**: <200ms
 - **Load Time**: <1 second on 3G
 
-### 📱 Mobile Performance
+### Mobile Performance
 - **Touch Response**: <100ms
 - **Scroll Performance**: 60fps maintained
 - **Animation Smoothness**: Hardware accelerated
 - **Memory Usage**: <50MB on mobile devices
 
-## 🎯 Assignment Compliance Checklist
+## Assignment Compliance Checklist
 
-### ✅ Technical Requirements
+### Technical Requirements
 - [x] **Fully responsive design** - Mobile-first with 3 breakpoints
 - [x] **All sections functional** - 11/11 sections implemented
 - [x] **Proper navigation** - Smooth scrolling with offset
 - [x] **Live hosting ready** - Static files, CDN optimized
 - [x] **Performance optimized** - <1s load time, 95+ score
 
-### ✅ Content Requirements  
+### Content Requirements  
 - [x] **Exact copy** - All text matches assignment brief
 - [x] **All sections** - 11 required sections included
 - [x] **Professional tone** - Institutional, authoritative voice
 - [x] **Web3 focused** - Blockchain and policy messaging
 
-### ✅ Design Requirements
+### Design Requirements
 - [x] **Color scheme** - Blue headlines, gold accents, green CTAs
 - [x] **Typography** - Inter & DM Sans, proper hierarchy
 - [x] **Layout** - Clean, modern, professional appearance
 - [x] **Accessibility** - Semantic HTML, ARIA support
 
-## 🔍 Code Documentation Details
+## Code Documentation Details
 
-### 📄 HTML Structure
+### HTML Structure
 ```html
 <!-- Semantic HTML5 structure -->
 <header> <!-- Navigation with accessibility -->
@@ -216,7 +216,7 @@ npx eslint js/main.js
 <footer> <!-- Contact and site info -->
 ```
 
-### 🎨 CSS Organization
+### CSS Organization
 ```css
 /* CSS Variables for consistency */
 :root { /* Design tokens */ }
@@ -230,7 +230,7 @@ npx eslint js/main.js
 .card { /* Reusable cards */ }
 ```
 
-### 📜 JavaScript Modules
+### JavaScript Modules
 ```javascript
 // Modular organization with clear separation
 initNavigation()     // Menu and scrolling
@@ -239,7 +239,7 @@ initAnimations()     // Intersection Observer
 initFormHandling()   // Form validation
 ```
 
-## 📞 Contact Information
+## Contact Information
 - **Email**: info@africaweb3institute.org
 - **Twitter**: @AfricaWeb3Inst
 - **LinkedIn**: Africa Web3 Institute
@@ -247,9 +247,9 @@ initFormHandling()   // Form validation
 
 ---
 
-## 🌍 Impact Statement
+## Impact Statement
 This project demonstrates how modern web development can create inclusive digital experiences that work seamlessly across Africa's diverse connectivity landscape, proving that high-performance design and accessibility can go hand-in-hand.
 
 ---
 
-*Built with ❤️ for Africa's Web3 future*
+*Built with care for Africa's Web3 future*
