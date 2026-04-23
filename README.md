@@ -1,7 +1,9 @@
 # Africa Web3 Institute Landing Page
 
 ## 🚀 Live Demo
-http://localhost:8000 (for local development)
+https://africaweb3institute.netlify.app/ (live deployment)
+
+**Local Development**: http://localhost:8000
 
 ## 📋 Project Overview
 A professional, high-performance landing page for Africa Web3 Institute (AWI) - a pan-African public policy and educational think tank advancing blockchain innovation through research, regulation, education, and ecosystem building.
@@ -261,7 +263,7 @@ Please find my optimized submission for the Africa Web3 Institute landing page a
 
 The implementation demonstrates advanced web development capabilities including performance optimization, responsive design, and modern best practices - perfectly suited for a Web3-focused policy institute.
 
-**Live Demo**: [Your deployment URL]
+**Live Demo**: https://africaweb3institute.netlify.app/
 
 Thank you for the opportunity.
 
