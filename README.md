@@ -4,7 +4,7 @@
 A fully responsive, high-performance landing page for Africa Web3 Institute built with vanilla HTML/CSS/JS, optimized for speed (<1s load), accessibility, and mobile UX. Designed to remain fast and accessible even in low-bandwidth environments common across Africa.
 
 ## Live Demo
-https://africaweb3institute.netlify.app/ (live deployment)
+https://africa-web3-institute.netlify.app/ (live deployment)
 
 **Local Development**: http://localhost:8000
 
